@@ -150,18 +150,4 @@ bool LinkedList<T>::removeFront()
 	return(isRemoved);
 }
 
-    © 2017 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    API
-    Training
-    Shop
-    Blog
-    About
-
 
