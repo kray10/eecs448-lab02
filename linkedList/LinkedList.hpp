@@ -1,3 +1,29 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @kray10
+
+0
+0
+
+    144
+
+kray10/eecs448-lab02 forked from jwgibbo/eecs448-lab02
+Code
+Pull requests 0
+Projects 0
+Wiki
+Settings
+eecs448-lab02/linkedList/LinkedList.hpp
+4326808 on Jan 28, 2016
+@jwgibbo jwgibbo Initial commit
+130 lines (106 sloc) 1.76 KB
 /**
 *	@author 
 *	@date 
@@ -29,10 +55,7 @@ bool LinkedList<T>::isEmpty() const
 template <typename T>
 int LinkedList<T>::size() const
 {
-	/** TODO 
-		Fix this method
-	*/
-	return(0);
+	return(m_size);
 }
 
 template <typename T>
@@ -41,9 +64,16 @@ bool LinkedList<T>::search(T value) const
 	Node<T>* temp = m_front;
 	bool isFound = false;
 
-	/** TODO 
-		Fix this method
-	*/
+	while (temp != nullptr && !isFound)
+	{
+		if (temp->getValue() == value)
+		{
+			isFound = true;
+		} else 
+		{
+			temp = temp->getNext();
+		}
+	}
 
 	return(isFound);
 }
@@ -127,3 +157,19 @@ bool LinkedList<T>::removeFront()
 
 	return(isRemoved);
 }
+
+    © 2017 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+
+
